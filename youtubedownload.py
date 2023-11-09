@@ -21,10 +21,6 @@ def startDownload():
         video_length.configure(text = str(math.floor(ytObject.length / 60)) + ":" + str((ytObject.length % 60)))
         video_uploaded.configure(text = str(ytObject.publish_date)[0:10])
 
-        #video_date = ytObject.publish_date
-        #video_date = str(video_date)[0:10]
-        #video_uploaded.configure(text = video_date)
-
         video.download()
     except:
         warning = messagebox.showwarning(title = "Warning", message = "The URL is invalid")
