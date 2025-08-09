@@ -59,3 +59,8 @@ env/
 
 # PyCharm settings folder
 .idea/
+
+#Data files
+backtest_results.csv
+historical_data.csv
+live_trade_log.csv
